@@ -21,7 +21,7 @@ on:
       compiler:
         description: "Compiler list"
         type: string
-        default: '["gcc"]'
+        default: '["llvm"]'
       cmodel:
         description: "C model list"
         type: string
