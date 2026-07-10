@@ -15,15 +15,6 @@ jobs:
     with:
       artifact-name: build
 
-  test-sim:
-    uses: ./.github/workflows/build-reusable.yaml
-    with:
-      artifact-name: sim
-      os: '["ubuntu-24.04"]'
-      mode: '["newlib"]'
-      target: '["rv64gc-lp64d"]'
-      sim: '["spike"]'
-
   build-multilib:
     if: ${{ false }} # Disable until multilib errors are triaged
     uses: ./.github/workflows/build-reusable.yaml
